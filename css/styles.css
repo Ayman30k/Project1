@@ -1,19 +1,9 @@
 /*Ayman Abulqasim 8907941*/
-html {
-    font: normal normal normal 20px/1.5 Verdana, Arial, Helvetica, sans-serif;
-}
 body{
     font: normal normal normal 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
     height : 100vh;
     width : 100vw;
     background-color: hsla(200, 45%, 81%, 0.7);
-    display: flex;
-    flex-direction: column;
-
-}
-h1{
-    color:blueviolet;
-    font-size:2.5rem;
 }
 h1{
     color:blueviolet;
@@ -25,34 +15,6 @@ h2{
 }
 header{
     background: hsl(300, 50%, 50%);
-    flex: 1 10%;
-}
-nav{
-    flex: 1 5%;
-}
-nav ul li{
-    display : inline;
-    list-style-type: none;
-}
-nav ul li a{
-    border: 2px solid indigo;
-    color: indigo;
-    background-color: cornsilk;
-    text-decoration: none;
-    padding: 1em;
-}
-nav ul li a:hover{
-    border: 2px cornsilk;
-    color: cornsilk;
-    background-color: indigo;
-}
-section{
-    display: flex;
-    flex-direction: row;
-    flex: 4 8%;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    justify-content: space-between;
 }
 nav ul li{
     display : inline;
@@ -71,12 +33,10 @@ nav ul li a:hover{
     background-color: indigo;
 }
 main{
+    float : left;
+    width : 65vw;
     background-color: hsl(130, 39%, 50%);
-<<<<<<< Updated upstream
     
-=======
-    flex: 2 1 70%; 
->>>>>>> Stashed changes
 }
 aside ul{
     list-style-type: square;
@@ -92,33 +52,18 @@ aside a :hover{
     color : #f09;
 }
 aside{
+    float : right;
+    width : 25vw;
     background-color: hsl(69, 89%, 57%);
-<<<<<<< Updated upstream
     
-=======
-    flex: 1 2 30%;
-    
-}
-figure{
-    border: 2px solid black;
-}
-img{
-    width: 100%;
-    height: 80%;
-}
-#gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
->>>>>>> Stashed changes
 }
 footer{
+    clear: both;
     background-color: hsl(249, 38%, 26%);
-    flex: 1 5%;
 }
 .structural{
-    margin : 1rem;
-    padding: 1rem;
+    margin : 10px;
+    padding: 10px;
     border : 2px solid black;
 }
 #para1{
@@ -156,17 +101,4 @@ fieldset{
 }
 footer p{
     font-size : .75em;
-}
-@media (max-width: 1200px){
-    html{
-        font-size: 15px;
-    }
-}
-@media (max-width: 600px){
-    html{
-        font-size: 10px;
-    }
-    #gallery{
-        grid-template-columns: 1fr;
-    }
 }
